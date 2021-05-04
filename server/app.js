@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 
 
 const Employee = mongoose.model('employee')
-const mongouri = "mongodb+srv://app:a4ExWFX2369X1VkW@cluster0.9on1s.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const mongouri = "mongodb://<username>:<password>@<address>"
 
 mongoose.connect(mongouri,{
     useNewUrlParser:true,
